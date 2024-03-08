@@ -1,7 +1,7 @@
 {
 	"id": "fiboclk",
 	"name": "Fibonacci Clock",
-	"version": "0.01",
+	"version": "0.02",
 	"description": "Clock face to show time using Fibonacci sequence",
 	"icon": "app-icon.png",
 	"screenshots": [{"url":"screenshot.png"}],
