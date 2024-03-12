@@ -16,8 +16,6 @@ var settings = Object.assign({
   bothcolor : 'Blue',
   emptycode : '#ff0',
   emptycolor : 'Orange',
-  timecode : '#ff0',
-  timecolor : 'Orange',
 	showtime: false,
 }, require('Storage').readJSON("fiboclk.json", true) || {});
 

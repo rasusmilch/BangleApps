@@ -4,7 +4,7 @@
   // TODO Only the color/theme indices should be written in the settings file so the labels can be translated
 
   // Initialize with default settings...
-  let s = {'hourcode': '#f00', 'hourcolor': 'Red', 'mincode' : '#0f0', 'mincolor' : 'Green', 'bothcode' : '#00f', 'bothcolor' : 'Blue','emptycode' : '#ff0', 'emptycolor' : 'Orange', 'showtime' : false, 'timecode' : '#ff0', 'timecolor' : 'Orange'};
+  let s = {'hourcode': '#f00', 'hourcolor': 'Red', 'mincode' : '#0f0', 'mincolor' : 'Green', 'bothcode' : '#00f', 'bothcolor' : 'Blue','emptycode' : '#ff0', 'emptycolor' : 'Orange', 'showtime' : false};
 
   // ...and overwrite them with any saved values
   // This way saved values are preserved if a new version adds more settings
@@ -64,16 +64,6 @@
       onchange: v => {
         s.emptycolor = color_options[v];
         s.emptycode = color_code[v];
-        save();
-      }
-    },
-    /*LANG*/'Time Color': {
-      value: 0 | color_options.indexOf(s.timecolor),
-      min: 0, max: 7,
-      format: v => color_options[v],
-      onchange: v => {
-        s.timecolor = color_options[v];
-        s.timecode = color_code[v];
         save();
       }
     },
